@@ -1,0 +1,7 @@
+<h1>Mortalitiy Rates</h1>
+<% @mortalities.each do |m| %>
+	<li>
+		<%= "#{m.name}: #{m.rate*100}%" %>
+		<%= link_to "(source)", m.source %>
+	</li>
+<% end %>
