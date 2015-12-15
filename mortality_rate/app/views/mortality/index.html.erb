@@ -3,5 +3,6 @@
 	<li>
 		<%= "#{m.name}: #{m.rate*100}%" %>
 		<%= link_to "(source)", m.source %>
+		<%= link_to " - See Details", "/mortality/#{m.id}" %>
 	</li>
 <% end %>

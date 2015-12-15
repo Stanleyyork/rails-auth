@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 	post '/users' => 'users#create'
 
 	get '/index' => 'mortality#index'
+	get '/mortality' => 'mortality#index'
+	get '/mortality/:id' => 'mortality#show'
 
 
 end

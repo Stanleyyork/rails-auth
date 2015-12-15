@@ -13,6 +13,7 @@ class MortalityController < ApplicationController
 	end
 
 	def show
+		@mortality = Mortality.find(params[:id])
 	end
 
 end
