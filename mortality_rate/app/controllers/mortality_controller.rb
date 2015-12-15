@@ -1,14 +1,18 @@
 class MortalityController < ApplicationController
-  def new
-  end
 
-  def create
-  end
+	before_filter :authorize
+  
+	def new
+	end
 
-  def index
-  	@mortalities = Mortality.all
-  end
+	def create
+	end
 
-  def show
-  end
+	def index
+		@mortalities = Mortality.all
+	end
+
+	def show
+	end
+
 end

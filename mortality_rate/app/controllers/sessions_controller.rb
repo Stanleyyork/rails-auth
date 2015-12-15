@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
 
+	before_filter :no_reg_login_current_user, :except => :destroy
+
 	def new
 	end
 

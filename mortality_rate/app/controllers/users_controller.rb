@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
 	before_filter :authorize, :except => [:new, :create]
+	before_filter :no_reg_login_current_user
 
 	def new
 	end

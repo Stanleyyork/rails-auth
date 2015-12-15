@@ -12,5 +12,11 @@ class ApplicationController < ActionController::Base
   def authorize
     redirect_to '/login' unless current_user
   end
+
+  def no_reg_login_current_user
+    if current_user
+      redirect_to '/index'
+    end
+  end
   
 end
