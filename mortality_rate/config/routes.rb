@@ -13,5 +13,8 @@ Rails.application.routes.draw do
 	get '/mortality' => 'mortality#index'
 	get '/mortality/:id' => 'mortality#show'
 
+	resources :users
+	resources :sessions
+	resources :password_resets
 
 end

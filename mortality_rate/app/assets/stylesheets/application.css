@@ -14,8 +14,12 @@
  *= require_tree .
  *= require_self
  */
+.navbar {
+	margin-top: 5px;
+	margin-left: 15px;
+}
 body {
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-left: 25px;
 	background-color: #fafafa;
 }
